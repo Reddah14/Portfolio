@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: url(./assets/images/Stars.jpg) no-repeat top center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fcd000;
+  min-height: 100vh;
+
+  &--name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  &--role {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+  }
+}
