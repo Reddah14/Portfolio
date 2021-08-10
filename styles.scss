@@ -1,31 +1,95 @@
+@import './assets/styles/typography.scss';
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
-  background: url(./assets/images/Stars.jpg) no-repeat top center;
+  background: url(./assets/images/Stars.jpg) top center;
   height: 100vh;
   width: 100vw;
+  perspective: 200px;
+  overflow: hidden;
 }
 
-.header__container {
+.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fcd000;
+  color: #fcdc4dff;
   min-height: 100vh;
+  padding: 0%;
+  margin: 0%;
+  border-left: #662C91; /* TODO: fix border */
 
   &--name {
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-family: $primary-font;
+    font-size: 70px;
     text-align: center;
   }
 
   &--role {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: $secondary-font;
     font-size: 40px;
     text-align: center;
+  }
+}
+
+/* 
+  ··MOBILE => IF width LESS THAN 539px(?IS THIS OK?) then follow below 
+*/
+
+@media screen and (max-width: 539px) {
+  .nav {
+      display: flex;
+      flex-direction: row;
+      background-color: #170404;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      position: fixed;
+      margin-top: -100px;
+      width: 100vw;
+
+    .material-icons {
+      color: #fcdc4dff;
+      font-size: 30px;
+      padding: 7px;
+      margin: 5px;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    .material-icons:hover {
+      background-color: #fcdc4dff;
+      color: black;
+    }
+
+    &__title {
+      cursor: pointer;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fcdc4dff;
+      text-transform: uppercase;
+      margin-right: 110px;
+      justify-content: center;
+
+      > span {
+        color: #662C91;
+      }
+    }
+  }
+
+  .main {
+    justify-content: normal;
+    margin-top: 100px;
+
+    &--name {
+      font-size: $font__mobile--name;
+    }
+
+    &--role {
+      font-size: $font__mobile--role;
+    }
   }
 }
