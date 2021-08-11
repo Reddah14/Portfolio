@@ -103,6 +103,7 @@ body {
 /* main */
   .main {
     width: 100vw;
+    margin-left: 0px;
 
     &__name-line {
       > h1 {
@@ -165,6 +166,59 @@ body {
           background-color: #170404;
           color: #662C91ff;
         }
+      }
+    }
+  }
+
+  .section {
+    .btn-info {
+      text-transform: uppercase;
+      background-color: #170404;
+      color: #9a031eff;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .modal {
+      height: 500px;
+      width: 80%;
+      align-items: center;
+      margin-left: 30px;
+
+      .custom-modal {
+        background-color: lightcoral;
+
+        .modal-header {
+          border-bottom: 1px solid #170404;
+
+          .modal-title {
+            color: #170404;
+          }
+        }
+
+        .skill-icon {
+          display: flex;
+          margin-left: 3px;
+          margin-right: 3px;
+          justify-content: center;
+          color: black;
+          font-size: 25px;
+        }
+
+        .modal-footer {
+          display: flex;
+          justify-content: center;
+          
+          .btn-default {
+            background-color: #170404;
+            color: lightcoral;
+          }
+        }
+
+
+      }
+      .modal-footer {
+        border-top: 1px solid #170404;
       }
     }
   }

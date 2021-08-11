@@ -88,6 +88,7 @@ body {
   /* main */
   .main {
     width: 100vw;
+    margin-left: 0px;
   }
   .main__name-line > h1 {
     display: flex;
@@ -121,7 +122,9 @@ body {
     color: #fcdc4dff;
   }
   .main__description-line {
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: inherit;
+    width: 95%;
   }
   .main__description-line > p {
     color: #fff;
@@ -139,6 +142,48 @@ body {
     justify-content: end;
     background-color: #170404;
     color: #662C91ff;
+  }
+
+  .section .btn-info {
+    text-transform: uppercase;
+    background-color: #170404;
+    color: #9a031eff;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .section .modal {
+    height: 500px;
+    width: 80%;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .section .modal .custom-modal {
+    background-color: lightcoral;
+  }
+  .section .modal .custom-modal .modal-header {
+    border-bottom: 1px solid #170404;
+  }
+  .section .modal .custom-modal .modal-header .modal-title {
+    color: #170404;
+  }
+  .section .modal .custom-modal .skill-icon {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 3px;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+  }
+  .section .modal .custom-modal .modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .section .modal .custom-modal .modal-footer .btn-default {
+    background-color: #170404;
+    color: lightcoral;
+  }
+  .section .modal .modal-footer {
+    border-top: 1px solid #170404;
   }
 }
 /*  fonts 
