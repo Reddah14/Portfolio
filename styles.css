@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: azure;
+}
+
+body {
+  background: url(./assets/images/Stars.jpg) top center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  background-color: #170404;
+  height: 50px;
+  position: sticky;
+}
+
+@media screen and (max-width: 539px) {
+  /* nav bar */
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+  .nav .fa-bars {
+    color: #fcdc4dff;
+    font-size: 32px;
+  }
+  .nav__menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+  .nav__title {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fcdc4dff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .nav__title > span {
+    color: #662C91;
+  }
+  .nav__title:hover {
+    color: #662C91;
+  }
+  .nav__title:hover > span {
+    color: #fcdc4dff;
+  }
+
+  /* header */
+  .header {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border-left: 2px solid #662C91;
+  }
+  .header__welcome-line > p {
+    color: #fff;
+    background-color: #170404;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding-left: 5px;
+  }
+  .header__welcome-line > p > span {
+    font-size: 30px;
+  }
+  .header__intro-line > p {
+    margin-bottom: 4px;
+    width: 101px;
+    color: #fff;
+    background-color: #170404;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 5px;
+  }
+
+  /* main */
+  .main {
+    width: 100vw;
+  }
+  .main__name-line > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #fcdc4dff;
+  }
+  .main__starring-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+  }
+  .main__starring-line > p {
+    color: #9a031eff;
+  }
+  .main__role-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    /* margin-top: -10px; */
+  }
+  .main__role-line > h2 {
+    font-size: 40px;
+    color: #fcdc4dff;
+  }
+  .main__description-line {
+    margin-left: 15px;
+  }
+  .main__description-line > p {
+    color: #fff;
+  }
+  .main__description-line .fa-quote-left {
+    color: #662c91ff;
+  }
+  .main__description-line .fa-quote {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main__description-line .fa-quote > small {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #170404;
+    color: #662C91ff;
+  }
+}
+/*  fonts 
+
+$primary-font: 'Dancing Script', cursive;
+$secondary-font: 'Barlow Condensed', sans-serif;
+
+*/

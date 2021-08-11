@@ -1,95 +1,176 @@
-@import './assets/styles/typography.scss';
-
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  color: azure;
 }
 
 body {
   background: url(./assets/images/Stars.jpg) top center;
   height: 100vh;
   width: 100vw;
-  perspective: 200px;
-  overflow: hidden;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  color: #fcdc4dff;
-  min-height: 100vh;
-  padding: 0%;
-  margin: 0%;
-  border-left: #662C91; /* TODO: fix border */
-
-  &--name {
-    font-family: $primary-font;
-    font-size: 70px;
-    text-align: center;
-  }
-
-  &--role {
-    font-family: $secondary-font;
-    font-size: 40px;
-    text-align: center;
-  }
+.nav {
+  background-color:#170404;
+  height: 50px;
+  position: sticky;
 }
-
-/* 
-  ··MOBILE => IF width LESS THAN 539px(?IS THIS OK?) then follow below 
-*/
 
 @media screen and (max-width: 539px) {
-  .nav {
-      display: flex;
-      flex-direction: row;
-      background-color: #170404;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-      position: fixed;
-      margin-top: -100px;
-      width: 100vw;
 
-    .material-icons {
+/* nav bar */
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    .fa-bars {
       color: #fcdc4dff;
-      font-size: 30px;
-      padding: 7px;
-      margin: 5px;
-      background-color: black;
-      border-radius: 5px;
+      font-size: 32px;
     }
 
-    .material-icons:hover {
-      background-color: #fcdc4dff;
-      color: black;
+    &__menu-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
     }
 
     &__title {
-      cursor: pointer;
+      display: flex;
+      justify-content: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: #fcdc4dff;
       text-transform: uppercase;
-      margin-right: 110px;
-      justify-content: center;
+      font-weight: 600;
 
       > span {
         color: #662C91;
       }
     }
+    
+    &__title:hover {
+      color: #662C91;
+
+      > span {
+        color: #fcdc4dff;
+      }
+    }
   }
 
-  .main {
-    justify-content: normal;
-    margin-top: 100px;
+/* header */
+  .header {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border-left: 2px solid #662C91;
+    
+    &__welcome-line {
+      > p {
+        color: #fff;
+        background-color: #170404;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        padding-left: 5px;
 
-    &--name {
-      font-size: $font__mobile--name;
+        > span {
+          font-size: 30px;         
+        }
+      }
+
+    }
+    
+    &__intro-line {
+      > p {
+        margin-bottom: 4px;
+        width: 101px;
+        color: #fff;
+        background-color: #170404;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 2px;        
+        padding-left: 5px;
+      }
+    } 
+  }
+
+/* main */
+  .main {
+    width: 100vw;
+
+    &__name-line {
+      > h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 48px;
+        font-weight: bold;
+        margin-top: 15px;
+        color: #fcdc4dff;
+      }
+    }
+    
+    &__starring-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 0px;
+
+      > p {
+        color: #9a031eff;   
+      }
+    }
+    
+    &__role-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      /* margin-top: -10px; */
+      > h2 {
+        font-size: 40px;
+        color: #fcdc4dff;
+      }      
     }
 
-    &--role {
-      font-size: $font__mobile--role;
+    &__description-line {
+      margin-left: 15px;
+
+      > p {
+        color: #fff;
+        
+      }
+      .fa-quote-left {
+        color: #662c91ff;
+      }
+
+      .fa-quote {
+        display: flex;
+        justify-content: flex-end;
+
+        > small {
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          background-color: #170404;
+          color: #662C91ff;
+        }
+      }
     }
   }
 }
+
+/*  fonts 
+
+$primary-font: 'Dancing Script', cursive;
+$secondary-font: 'Barlow Condensed', sans-serif;
+
+*/

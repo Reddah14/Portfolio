@@ -4,43 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/2de2462ed4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 
     <title>Salvador Martinez - Portfolio</title>
   </head>
-  <body>
-    <nav class="nav">
 
-      <div>
+  <body>
+    <script>
+
+    </script>
+    <nav class="row nav">
+
+      <div class="col-2 nav__menu-btn">
         <a href="">
-          <span class="material-icons">
-            menu
-          </span>
+          <i class="fas fa-bars"></i>
         </a>
       </div>
 
-      <div class="nav__title">
+      <div class="col-8 nav__title">
         <span>salvador</span>martinez
       </div>
 
+      <div class="col-2">
+        <!-- spacer -->
+      </div>            
     </nav>
 
-    <main class="main">
-      <div>
-        
+    <header class="row header">
+
+      <div class="col-12 header__welcome-line">
+        <p>
+          <span>Hi,</span> welcome to my portfolio 
+        </p>
       </div>
-      <div class="main--name">
+
+      <div class="col-12 header__intro-line">
+        <p>
+          My name is,
+        </p>
+      </div>
+
+    </header>
+
+    <main class="row main">
+
+      <div class="col-12 main__name-line">
         <h1>Salvador Martinez</h1>
       </div>
-      <div class="main--role">
+
+      <div class="col-12 main__starring-line">
+        <p>
+          · starring as a ·
+        </p> 
+      </div>
+
+      <div class="col-12 main__role-line">
         <h2>Software Developer</h2>
       </div>
-    </main>
 
+      <div class="col-12 main__description-line">
+        <i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+        <p>
+          Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+          It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+          And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past. 
+
+          <div class="col-1">
+            <!-- spacer -->
+          </div>
+
+          <div class="col-11 fa-quote">
+            <small>
+              - Quote from fontawesome.com -
+            </small>
+          </div>
+        </p>
+      </div>
+
+    </main>
+    
   </body>
 </html>
