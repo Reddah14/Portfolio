@@ -1,0 +1,121 @@
+@import './assets/styles/typography.scss';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/images/Stars.jpg) top center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: #fcdc4dff;
+  min-height: 100vh;
+  padding: 0%;
+  margin: 0%;
+
+  &__name {
+    font-family: $primary-font;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  &__role {
+    font-family: $secondary-font;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+/* 
+  ··MOBILE => IF width LESS THAN 539px(?IS THIS OK?) then follow below 
+*/
+
+@media screen and (max-width: 539px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 2fr 1fr;
+    height: 100vh;
+  }
+
+  .nav {
+      display: flex;
+      flex-direction: row;
+      background-color: #170404;
+      align-items: center;
+      padding: 10px;
+      position: fixed;
+      margin-top: -100px;
+      width: 100vw;
+
+    .material-icons {
+      color: #fcdc4dff;
+      font-size: 30px;
+      padding: 7px;
+      margin: 5px;
+      background-color: black;
+      border-radius: 5px;
+    }
+
+    .material-icons:hover {
+      background-color: #fcdc4dff;
+      color: black;
+    }
+
+    &__title {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fcdc4dff;
+      text-transform: uppercase;
+      margin-right: 110px;
+      justify-content: center;
+
+      > span {
+        color: #662C91;
+      }
+    }
+  }
+
+  .header {
+    justify-content: normal;
+    margin-top: 100px;
+    max-height: 50vh;
+    border-left: 1px solid blue;
+
+    &__welcome {
+      margin: 10px 0px 15px 25px;
+      font-size: 19px;
+      font-family: monospace;
+      font-weight: lighter;
+      color: #9a031eff;
+      background-color: black;
+      
+    }
+
+    &__name {
+      font-size: $font__mobile--name;
+    }
+
+    &__role {
+      font-size: $font__mobile--role;
+    }
+  }
+}
+
+
+ 
+/* 
+  CSS HEX :
+
+black: #000000ff;
+mustard: #fcdc4dff;
+ruby-red: #9a031eff;
+orange-pantone: #f75c03ff;
+rebecca-purple: #662c91ff;
+
+*/
