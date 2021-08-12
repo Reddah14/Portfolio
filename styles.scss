@@ -21,6 +21,10 @@ body {
     display: none;
   }
 
+  .my-project {
+    display: none;
+  }
+
   .nav-mobile {
     display: flex;
     justify-content: center;
@@ -168,12 +172,16 @@ body {
         display: flex;
         justify-content: flex-end;
 
-        > small {
+        a > small {
           display: flex;
           flex-direction: row;
           justify-content: end;
           background-color: #170404;
           color: #662C91ff;
+        }
+
+        > a {
+          text-decoration: none;
         }
       }
     }
@@ -279,7 +287,6 @@ body {
 }
 
 /* desktop */
-
 @media screen and (min-width: 890px) {
 
   .nav-mobile {
@@ -449,7 +456,7 @@ body {
         > a {
           text-decoration: none;
         }
-        
+
         a > small {
           display: flex;
           flex-direction: row;
