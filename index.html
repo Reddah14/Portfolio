@@ -29,17 +29,16 @@
     <title>Salvador Martinez - Portfolio</title>
   </head>
 
+
+
   <body>
     <nav class="row nav-mobile ">
-
       <div class="col-2">
           <i class="fas fa-grin-stars fa-spin"></i>
       </div>
-
       <div class="col-8 nav-mobile__title">
         <span>salvador</span>martinez
       </div>
-
       <div class="col-2">
         <i class="fas fa-grin-stars fa-spin"></i>
       </div>            
@@ -49,18 +48,16 @@
       <div class="col-4 nav-desktop__title">
         <span>salvador</span>martinez
       </div>
-
       <div class="col 8 nav-desktop__links">
         <i class="fab fa-github icon--link"></i>
         <i class="fas fa-envelope icon--link"></i>
         <i class="devicon-linkedin-plain icon--link"></i>
       </div>
-
     </nav>
 
     <header class="row header">
 
-      <div class="col-12 header__welcome-line">
+      <div class="col-12 header__welcome-line ">
         <p>
           <span>Hi,</span> welcome to my portfolio 
         </p>
@@ -92,7 +89,9 @@
       </div>
 
       <div class="col-12 main__description-line">
-        <i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+        <a href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/bordered-pulled-icons" target="_blank">
+          <i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+        </a>
         <p>
           Gatsby believed in the green light, the orgastic future that year by year recedes before us.
           It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
@@ -103,27 +102,41 @@
           </div>
 
           <div class="col-11 fa-quote">
-            <small>
-              - Quote from fontawesome.com -
-            </small>
+            <a href="https://fontawesome.com/" target="_blank">
+              <small>
+                - Quote from fontawesome.com -
+              </small>
+            </a>
           </div>
         </p>
       </div>
     </main>
 
-    <section>
+    <section class="">
       <div class="row section-skills">
         <div class="col-2">
           <!-- spacer -->
         </div>
+
         <!-- skills button -->
 
-        <div class="col-4">
+        <div class="col-4 desktop--layout">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySkillModal">Skills</button>
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#mySkillModal"
+          >
+            Skills
+          </button>
         
           <!-- Modal -->
-          <div class="modal fade" id="mySkillModal" role="dialog">
+          <div
+            class="modal fade"
+            id="mySkillModal"
+            role="dialog"
+          >
             <div class="modal-dialog">            
               <!-- Modal content-->
               <div class="modal-content custom-modal">
@@ -156,13 +169,21 @@
         </div>
 
         <!-- contact -->
-        <div class="col-4">
+        <div class="col-4 desktop--layout">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myContactModal">contact</button>
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#myContactModal"
+          >
+            contact
+          </button>
         
           <!-- Modal -->
           <div class="modal fade" id="myContactModal" role="dialog">
-            <div class="modal-dialog">            
+            <div class="modal-dialog">
+
               <!-- Modal content-->
               <div class="modal-content custom-modal">
       
@@ -171,10 +192,12 @@
                 </div>
       
                 <div class="modal-body contact-modal-body">
-                  <a href="https://www.google.com">
+                  <a href="https://www.linkedin.com/in/salvador-mv-myprofile/" target="_blank">
                     <i class="devicon-linkedin-plain contact-icon"></i>
                   </a>
-                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto: cartoonrocket9@gmail.com?subject=About your portfolio" target="_blank">
+                    <i class="fas fa-envelope contact-icon"></i>
+                  </a>
                 </div>
       
                 <div class="modal-footer">
@@ -185,8 +208,7 @@
       
               </div>              
             </div>
-          </div>
-          
+          </div>          
         </div>        
         <div class="col-2">
           <!-- spacer -->
