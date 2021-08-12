@@ -12,33 +12,36 @@ body {
   margin: auto;
 }
 
-.nav {
-  background-color:#170404;
-  height: 45px;
-}
-
 @media screen and (max-width: 539px) {
   body {
     min-height: 100vh;
   }
 /* nav bar */
-  .nav {
+  .nav-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2px;
+    background-color:#170404;
+    height: 45px;    
 
     .fa-bars {
       color: #fcdc4dff;
       font-size: 32px;
     }
 
-    &__menu-btn {
+    .fa-grin-stars {
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding-right: 0;
+      color: #662C91;
     }
+
+    .fa-grin-stars:hover {
+      display: flex;
+      justify-content: center;
+      color: #9a031eff;
+    }
+
 
     &__title {
       display: flex;
