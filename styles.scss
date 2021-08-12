@@ -11,12 +11,16 @@ body {
   width: 100vw;
   margin: auto;
 }
-
+/* mobile */
 @media screen and (max-width: 539px) {
   body {
     min-height: 100vh;
   }
 /* nav bar */
+  .nav-desktop {
+    display: none;
+  }
+
   .nav-mobile {
     display: flex;
     justify-content: center;
