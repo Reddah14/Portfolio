@@ -460,6 +460,144 @@ body {
       }
     }
   }
+
+  .section-skills {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    .desktop--layout {
+      margin-left: 2px;
+    }
+    .btn-info {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      background-color: #170404;
+      color: #9a031eff;
+      width: 36%;
+      margin-top: 20px;
+    }
+
+
+    .modal {
+      height: 500px;
+      width: 100%;
+      align-items: center;
+      margin-left: 0px;
+
+      .custom-modal {
+        background-color: lightcoral;
+
+        .modal-header {
+          border-bottom: 1px solid #170404;
+
+          .modal-title {
+            color: #170404;
+          }
+        }
+        
+        .skill-icon {
+          display: flex;
+          margin-left: 3px;
+          margin-right: 3px;
+          justify-content: center;
+          color: black;
+          font-size: 40px;
+        }
+
+        .modal-footer {
+          display: flex;
+          justify-content: center;
+          
+          .btn-default {
+            background-color: #170404;
+            color: lightcoral;
+          }
+        }
+        .contact-icon {
+          display: flex;
+          margin-left: 5px;
+          margin-right: 5px;
+          justify-content: center;
+          color: black;
+          font-size: 35px;          
+        }
+
+        .contact-modal-body {
+          display: flex;
+          justify-content: center;
+          > a {
+            text-decoration: none;
+          } 
+        }
+      }
+      .modal-footer {
+        border-top: 1px solid #170404;
+      }
+    }
+  }
+
+  .link-to-projects {
+    text-align: center;
+    color: antiquewhite;
+    font-family: monospace;
+    margin-top: 27px;
+    padding: 5px 0px;
+    border: 2px solid #662C91ff;
+    font-size: 20px;
+  }
+
+  .my-project {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+
+    .box {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      background-color: transparent;
+      height: 300px;
+      width: 600px;
+    }
+
+    h4 {
+      font-size: 25px;
+      text-align: left;
+    }
+
+    .image {
+      max-width: inherit;
+      max-height: 300px;
+      display: flex;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    height: 70px;
+
+    &__content {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 7px;
+      color: #9a031eff;
+      font-size: 17px;
+    }
+  }
+
+  
+}
+
 /*  fonts 
 
 $primary-font: 'Dancing Script', cursive;
