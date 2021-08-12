@@ -98,16 +98,18 @@
     </main>
 
     <section>
-      <div class="row section">
+      <div class="row section-skills">
         <div class="col-2">
-
+          <!-- spacer -->
         </div>
+        <!-- skills button -->
+
         <div class="col-4">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Skills</button>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySkillModal">Skills</button>
         
           <!-- Modal -->
-          <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal fade" id="mySkillModal" role="dialog">
             <div class="modal-dialog">            
               <!-- Modal content-->
               <div class="modal-content custom-modal">
@@ -138,14 +140,57 @@
             </div>
           </div>
         </div>
+
+        <!-- friendME -->
         <div class="col-4">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myContactModal">contact</button>
+        
+          <!-- Modal -->
+          <div class="modal fade" id="myContactModal" role="dialog">
+            <div class="modal-dialog">            
+              <!-- Modal content-->
+              <div class="modal-content custom-modal">
+      
+                <div class="modal-header">
+                  <h4 class="modal-title">Contact</h4>
+                </div>
+      
+                <div class="modal-body contact-modal-body">
+                  <a href="https://www.google.com">
+                    <i class="devicon-linkedin-plain contact-icon"></i>
+                  </a>
+                  <i class="fas fa-envelope contact-icon"></i>
+                </div>
+      
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+      
+              </div>              
+            </div>
+          </div>
           
         </div>        
         <div class="col-2">
-
+          <!-- spacer -->
         </div>
       </div>
     </section>
+
+    <section class="row section-project">
+      <a href="https://github.com/Reddah14" class="col-12 link-to-projects">
+        See my latest programming projects here 💻
+      </a>
+    </section>
     
+    <footer class="footer">
+      <div class="row footer__content">
+        &copy Salvador-Martinez 2021        
+      </div>
+    </footer>
+
   </body>
 </html>
