@@ -16,6 +16,11 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <script src="https://kit.fontawesome.com/2de2462ed4.js" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
     
     
@@ -24,33 +29,39 @@
     <title>Salvador Martinez - Portfolio</title>
   </head>
 
+
+
   <body>
-    <script>
-
-    </script>
-    <nav class="row nav">
-
-      <div class="col-2 nav__menu-btn">
-        <a href="">
-          <i class="fas fa-bars"></i>
-        </a>
+    <nav class="row nav-mobile ">
+      <div class="col-2">
+          <i class="fas fa-grin-stars fa-spin"></i>
       </div>
-
-      <div class="col-8 nav__title">
+      <div class="col-8 nav-mobile__title">
         <span>salvador</span>martinez
       </div>
-
       <div class="col-2">
-        <!-- spacer -->
+        <i class="fas fa-grin-stars fa-spin"></i>
       </div>            
+    </nav>
+
+    <nav class="row nav-desktop">
+      <div class="col-4 nav-desktop__title">
+        <span>salvador</span>martinez
+      </div>
+      <div class="col 8 nav-desktop__links">
+        <i class="fab fa-github icon--link"></i>
+        <i class="fas fa-envelope icon--link"></i>
+        <i class="devicon-linkedin-plain icon--link"></i>
+      </div>
     </nav>
 
     <header class="row header">
 
-      <div class="col-12 header__welcome-line">
+      <div class="col-12 header__welcome-line ">
         <p>
           <span>Hi,</span> welcome to my portfolio 
         </p>
+
       </div>
 
       <div class="col-12 header__intro-line">
@@ -78,7 +89,9 @@
       </div>
 
       <div class="col-12 main__description-line">
-        <i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+        <a href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/bordered-pulled-icons" target="_blank">
+          <i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+        </a>
         <p>
           Gatsby believed in the green light, the orgastic future that year by year recedes before us.
           It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
@@ -89,27 +102,41 @@
           </div>
 
           <div class="col-11 fa-quote">
-            <small>
-              - Quote from fontawesome.com -
-            </small>
+            <a href="https://fontawesome.com/" target="_blank">
+              <small>
+                - Quote from fontawesome.com -
+              </small>
+            </a>
           </div>
         </p>
       </div>
     </main>
 
-    <section>
+    <section class="">
       <div class="row section-skills">
         <div class="col-2">
           <!-- spacer -->
         </div>
+
         <!-- skills button -->
 
-        <div class="col-4">
+        <div class="col-4 desktop--layout">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySkillModal">Skills</button>
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#mySkillModal"
+          >
+            Skills
+          </button>
         
           <!-- Modal -->
-          <div class="modal fade" id="mySkillModal" role="dialog">
+          <div
+            class="modal fade"
+            id="mySkillModal"
+            role="dialog"
+          >
             <div class="modal-dialog">            
               <!-- Modal content-->
               <div class="modal-content custom-modal">
@@ -141,14 +168,22 @@
           </div>
         </div>
 
-        <!-- friendME -->
-        <div class="col-4">
+        <!-- contact -->
+        <div class="col-4 desktop--layout">
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myContactModal">contact</button>
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#myContactModal"
+          >
+            contact
+          </button>
         
           <!-- Modal -->
           <div class="modal fade" id="myContactModal" role="dialog">
-            <div class="modal-dialog">            
+            <div class="modal-dialog">
+
               <!-- Modal content-->
               <div class="modal-content custom-modal">
       
@@ -157,10 +192,12 @@
                 </div>
       
                 <div class="modal-body contact-modal-body">
-                  <a href="https://www.google.com">
+                  <a href="https://www.linkedin.com/in/salvador-mv-myprofile/" target="_blank">
                     <i class="devicon-linkedin-plain contact-icon"></i>
                   </a>
-                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto: cartoonrocket9@gmail.com?subject=About your portfolio" target="_blank">
+                    <i class="fas fa-envelope contact-icon"></i>
+                  </a>
                 </div>
       
                 <div class="modal-footer">
@@ -171,8 +208,7 @@
       
               </div>              
             </div>
-          </div>
-          
+          </div>          
         </div>        
         <div class="col-2">
           <!-- spacer -->
@@ -181,16 +217,99 @@
     </section>
 
     <section class="row section-project">
-      <a href="https://github.com/Reddah14" class="col-12 link-to-projects">
+      <a href="https://github.com/Reddah14?tab=repositories" class="col-12 link-to-projects" target="_blank">
         See my latest programming projects here 💻
       </a>
     </section>
+
+    <div class="row">
+      <section class="my-project">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="box"
+        >
+          <div class="row">
+            <h4>
+              Timeline project
+            </h4>
+            <div class="col-12">
+              <a href="https://github.com/Reddah14/timeline-project" target="_blank">
+                <img src="./assets/images/timeline.png" class="image" alt="todo project">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="box"
+        >
+          <div class="row">
+            <h4>
+              Awesome Todo
+            </h4>
+            <div class="col-12">
+              <a href="https://github.com/Reddah14/awesome-todo" target="_blank">
+                <img src="./assets/images/todo.png" class="image" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="my-project">
+        <div
+          data-aos="zoom-out-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="box"
+        >
+          <div class="row">
+            <h4>
+              Foods - Firebase
+            </h4>
+              <a href="https://github.com/Reddah14/Foods-FireBase" target="_blank">
+                <img src="./assets/images/foodsFB.png" class="image" alt="">
+              </a>        
+          </div>
+        </div>
+
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="box"
+        >
+          <div class="row">
+            <h4>
+              e-Zapatillas (e-Shoes :P)
+            </h4>
+              <a href="https://github.com/Reddah14/e-Zapatillas-frontend" target="_blank">
+                <img src="./assets/images/e-Zap.png" class="image" alt="">
+              </a>        
+          </div>
+        </div>     
+      </section>        
+    </div>    
+
+
+
     
     <footer class="footer">
       <div class="row footer__content">
         &copy Salvador-Martinez 2021        
       </div>
     </footer>
-
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
