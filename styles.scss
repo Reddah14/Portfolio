@@ -9,16 +9,18 @@ body {
   background: url(./assets/images/Stars.jpg) top center;
   height: 100vh;
   width: 100vw;
+  margin: auto;
 }
 
 .nav {
   background-color:#170404;
-  height: 50px;
-  position: sticky;
+  height: 45px;
 }
 
 @media screen and (max-width: 539px) {
-
+  body {
+    min-height: 100vh;
+  }
 /* nav bar */
   .nav {
     display: flex;
@@ -170,13 +172,13 @@ body {
     }
   }
 
-  .section {
+  .section-skills {
     .btn-info {
       text-transform: uppercase;
       background-color: #170404;
       color: #9a031eff;
       width: 100%;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     .modal {
@@ -205,6 +207,19 @@ body {
           font-size: 25px;
         }
 
+        .contact-modal-body{
+          display: flex;
+          justify-content: center;
+        }
+        .contact-icon {
+          display: flex;
+          margin-left: 5px;
+          margin-right: 5px;
+          justify-content: center;
+          color: black;
+          font-size: 35px;          
+        }
+
         .modal-footer {
           display: flex;
           justify-content: center;
@@ -222,6 +237,38 @@ body {
       }
     }
   }
+
+  .link-to-projects {
+    text-align: center;
+    color: antiquewhite;
+    font-family: monospace;
+    margin-top: 27px;
+    padding: 5px 0px;
+    
+    border: 2px solid #662C91ff;
+  }
+
+  .laptop-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: -10px;
+    height: 70px;
+
+    &__content {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 7px;
+      color: #9a031eff;
+    }
+  }
+
 }
 
 /*  fonts 

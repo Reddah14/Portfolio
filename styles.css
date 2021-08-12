@@ -9,15 +9,19 @@ body {
   background: url(./assets/images/Stars.jpg) top center;
   height: 100vh;
   width: 100vw;
+  margin: auto;
 }
 
 .nav {
   background-color: #170404;
-  height: 50px;
-  position: sticky;
+  height: 45px;
 }
 
 @media screen and (max-width: 539px) {
+  body {
+    min-height: 100vh;
+  }
+
   /* nav bar */
   .nav {
     display: flex;
@@ -144,29 +148,29 @@ body {
     color: #662C91ff;
   }
 
-  .section .btn-info {
+  .section-skills .btn-info {
     text-transform: uppercase;
     background-color: #170404;
     color: #9a031eff;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  .section .modal {
+  .section-skills .modal {
     height: 500px;
     width: 80%;
     align-items: center;
     margin-left: 30px;
   }
-  .section .modal .custom-modal {
+  .section-skills .modal .custom-modal {
     background-color: lightcoral;
   }
-  .section .modal .custom-modal .modal-header {
+  .section-skills .modal .custom-modal .modal-header {
     border-bottom: 1px solid #170404;
   }
-  .section .modal .custom-modal .modal-header .modal-title {
+  .section-skills .modal .custom-modal .modal-header .modal-title {
     color: #170404;
   }
-  .section .modal .custom-modal .skill-icon {
+  .section-skills .modal .custom-modal .skill-icon {
     display: flex;
     margin-left: 3px;
     margin-right: 3px;
@@ -174,16 +178,57 @@ body {
     color: black;
     font-size: 25px;
   }
-  .section .modal .custom-modal .modal-footer {
+  .section-skills .modal .custom-modal .contact-modal-body {
     display: flex;
     justify-content: center;
   }
-  .section .modal .custom-modal .modal-footer .btn-default {
+  .section-skills .modal .custom-modal .contact-icon {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    color: black;
+    font-size: 35px;
+  }
+  .section-skills .modal .custom-modal .modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .section-skills .modal .custom-modal .modal-footer .btn-default {
     background-color: #170404;
     color: lightcoral;
   }
-  .section .modal .modal-footer {
+  .section-skills .modal .modal-footer {
     border-top: 1px solid #170404;
+  }
+
+  .link-to-projects {
+    text-align: center;
+    color: antiquewhite;
+    font-family: monospace;
+    margin-top: 27px;
+    padding: 5px 0px;
+    border: 2px solid #662C91ff;
+  }
+
+  .laptop-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: -10px;
+    height: 70px;
+  }
+  .footer__content {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 7px;
+    color: #9a031eff;
   }
 }
 /*  fonts 
